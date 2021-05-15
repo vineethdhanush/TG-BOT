@@ -17,7 +17,7 @@ from tg_bot.modules import ALL_MODULES
 from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
-START_IMG = "https://telegra.ph/file/da3cc3f6c857ef60aab08.jpg"
+START_IMG = "https://telegra.ph/file/da3cc3f6chttps://telegra.ph/file/da1c3cb5c1b06e4c400a2.jpg857ef60aab08.jpg"
 
 
 
@@ -25,8 +25,8 @@ START_IMG = "https://telegra.ph/file/da3cc3f6c857ef60aab08.jpg"
 
 PM_START_TEXT = """
 
-Hello👋 {}, my name is {}! I am maintained by [THIS LEGEND](tg://user?id={}) I am a Pro admin bot. 
-As usual I am now with less updates.But soon new feautures will come soon. My new updates will be updated on my updates channel and if you have any doubts about me join my support group and ask their about my queries you have.. 
+Hello👋 {}, my name is {}! I am maintained by [THIS LEGEND](tg://user?id={}) I am a Pro Danush Group Help admin bot. 
+As usual you have any doubts about me join my support group and ask their about my queries you have.. 
 
 
 
@@ -162,8 +162,8 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_photo(START_IMG,PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="🕹️SUMMON ME🕹️", url="t.me/{}?startgroup=true".format(bot.username))],
-                     [InlineKeyboardButton(text="❤️UPDATES❤️", url="https://t.me/NAZRIYANAZEEM_BETA"), InlineKeyboardButton(text="❤️SUPPORT❤️", url="https://t.me/NAZRIYANAZEEMBETA")],
+                    
+                   [InlineKeyboardButton(text="❤️UPDATES❤️", url="https://t.me/NAZRIYANAZEEM_BETA"), InlineKeyboardButton(text="❤️SUPPORT❤️", url="https://t.me/NAZRIYANAZEEMBETA")],
                      [InlineKeyboardButton(text="❣️DEPLOY A BOT LIKE ME CLICK HERE❣️", url="https://youtu.be/q92-LTGwn9k")]]))
 
     else:
